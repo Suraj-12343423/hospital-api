@@ -1,59 +1,48 @@
-# 🏥 Patient API
 
-A simple REST API using Node.js and Express.
+# 🏥 Patients REST API (Express.js)
 
----
+A simple REST API built using Node.js and Express.js to manage hospital patients.
+This project demonstrates CRUD operations using an in-memory database.
 
-## 1. Install Dependencies
+## 🚀 Features
 
-```bash
-npm install express
-2. Run Server
-node index.js
-```
-Server runs at:
+- Add new patient
+- View all patients
+- Get patient by ID
+- Update patient (PATCH & PUT)
+- Delete patient
 
-http://localhost:3030
+## 🛠️ Tech Stack
 
-3. Features
-   
-Add patient
-View all patients
-View patient by ID
-Update patient (PUT / PATCH)
-Delete patient
+- Node.js
+- Express.js
+- JavaScript
 
-5. API Endpoints
+  ## 📡 API Endpoints
 
-Get all patients
-GET /patients
-Get patient by ID
-GET /patients/:id
-Add patient
-POST /patients
+GET /patients → Get all patients  
+GET /patients/:id → Get patient by ID  
+POST /patients → Add patient  
+PATCH /patients/:id → Update status  
+PUT /patients/:id → Replace patient  
+DELETE /patients/:id → Delete patient
 
-Body:
+## 🧠 Example Patient Object
 
 {
+  "id": 1,
   "name": "Ravi",
-  "disease": "Fever"
+  "disease": "Fever",
+  "status": "admitted"
 }
 
+## ⚠️ Limitations
 
-Update patient (PATCH)
+- Data is stored in memory
+- No database
+- Data resets on restart
 
-PATCH /patients/:id
+## 👨‍💻 Author
 
-Body:
-
-{
-  "status": "discharged"
-}
-Replace patient (PUT)
-PUT /patients/:id
-Delete patient
-DELETE /patients/:id
-5. Learnings
-Express setup
-HTTP methods
-CRUD operations
+Sai Suraj
+  
